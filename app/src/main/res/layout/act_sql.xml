@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+            android:id="@+id/btnCreateSQLiteDatabaseTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建SQLite数据库和数据表"
+            android:textAllCaps="false"
+    android:onClick="createdatabase"/>
+
+    <Button
+            android:id="@+id/btnSQLiteInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增记录"
+            android:onClick="addData"/>
+
+    <Button
+            android:id="@+id/btnSQLiteSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询记录"
+            android:onClick="searchData"/>
+
+    <Button
+            android:id="@+id/btnSQLiteUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改记录"
+            android:onClick="changeData"/>
+
+    <Button
+            android:id="@+id/btnSQLiteDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除记录"
+            android:onClick="deleteData"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+        <TextView
+                android:id="@+id/ttvwQueryResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="QueryResult"
+        android:textSize="10sp"/>
+    </ScrollView>
+    <Button
+            android:id="@+id/btnSQLiteDbCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="复制数据库"
+            android:onClick="copyDatabase"/>
+</LinearLayout>
